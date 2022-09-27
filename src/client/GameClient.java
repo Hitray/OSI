@@ -21,7 +21,7 @@ public class GameClient {
             PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
             BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));){
 
-            // Получаем текущий город с сервера, формируем правильное наименование города
+            
             String currentCity = Helpers.getCorrectCityName(in.readLine());
 
             if(currentCity.equalsIgnoreCase("???")){
