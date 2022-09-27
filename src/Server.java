@@ -14,7 +14,7 @@ public class Server {
 
             System.out.println("Сервер запущен");
 
-            try (Socket clientSocket = serverSocket.accept(); // ждем подключения
+            try (Socket clientSocket = serverSocket.accept(); 
                  PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
                  BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
             ) {
