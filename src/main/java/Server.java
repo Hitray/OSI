@@ -12,7 +12,7 @@ public class Server {
     public static void main(String[] args) {
         try (ServerSocket serverSocket = new ServerSocket(port);) {
 
-            System.out.println("Сервер запущен");
+            System.out.println("Сервер Run");
 
             try (Socket clientSocket = serverSocket.accept(); 
                  PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
