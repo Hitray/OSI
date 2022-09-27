@@ -18,7 +18,7 @@ public class Client {
 
             String serverAnswer = in.readLine();
 
-            System.out.println("Ответ с сервера: " + serverAnswer);
+            System.out.println("Answer in server: " + serverAnswer);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
